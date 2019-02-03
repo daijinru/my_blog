@@ -1,20 +1,28 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+<article class="article">
+    <h1 class="article article__title">
+        <%= @article.title %>
+    </h1>
+    
+    <div class="article article__main">
+        <%= @article.text %>
+    </div>
 
-<h2>Comments</h2>
-<% if @article.comments.any? %>
-  <%= render @article.comments %>
-<% end %>
+    <div class="article article__comments">
+        <h3 class="article article__comments-head">Comments</h3>
+        <% if @article.comments.any? %> 
+            <%= render 'comments/comment' %>
+        <% end %>
+    </div>
+</article>
 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+<div class="comment">
+    <h4 class="comment comment__hint">Add a comment:</h4>
+    <div class="comment comment__form">
+        <%= render 'comments/form' %>
+    </div>
+</div>
 
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<div class="links">
+    <%= link_to 'Edit', edit_article_path(@article) %> |
+    <%= link_to 'Back', articles_path %>
+</div>

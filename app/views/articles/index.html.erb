@@ -1,23 +1,26 @@
-<h1>Listing articles</h1>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Destroy', article_path(article),
-            method: :delete,
-            data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="page__wrap">
+    <h1>Web CAT</h1> 
 
-<div><%= link_to 'New article', new_article_path %></div>
-<div><%= link_to 'Home Page', welcome_index_path %></div>
+    <table class="articles">
+        <tr class="article__thead">
+            <th>Title</th>
+            <th>Description</th>
+            <th>Operating</th>
+        </tr>
+        
+        <% @articles.each do |article| %>
+            <tr>
+            <td><%= article.title %></td>
+            <td><%= article.text %></td>
+            <td><%= link_to 'Show', article_path(article) %>
+                <%= link_to 'Edit', edit_article_path(article) %>
+                <%= link_to 'Destroy', article_path(article),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+        <% end %>
+    </table>
+
+    <div><%= link_to 'New article', new_article_path %></div>
+    <div><%= link_to 'Home Page', welcome_index_path %></div>
+</div>

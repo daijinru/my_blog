@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2018_12_29_170943) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
+    t.text "desc"
     t.text "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -3,8 +3,8 @@
         <%= @article.title %>
     </h1>
     
-    <div class="article article__main">
-        <%= @article.text %>
+    <div class="article article__main markdown-body">
+        <%= markdown @article.text %>
     </div>
 
     <div class="article article__comments">

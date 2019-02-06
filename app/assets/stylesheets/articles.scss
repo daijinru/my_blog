@@ -2,24 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.page__wrap{
-    width: 90vw;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .articles{
     width: 100%;
-}
+    margin-bottom: 20px;
 
-.article__thead th{
-    text-align: left;
-}
-
-.article__thead th:first-of-type{
-    width: 30%;
-}
-
-.article__thead th:nth-of-type(2){
-    width: 40%;
+    &.article__thead th{
+        text-align: left;
+    }
+    
+    &.article__thead th:first-of-type{
+        width: 30%;
+    }
+    
+    &.article__thead th:nth-of-type(2){
+        width: 40%;
+    }
 }

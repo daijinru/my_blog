@@ -2,13 +2,17 @@
     <h1 class="article article__title">
         <%= @article.title %>
     </h1>
-    
+
+    <time class="article article_time">
+        <%= @article.created_at.to_formatted_s(:long) %>
+    </time>
+
     <div class="article article__main markdown-body">
         <%= markdown @article.text %>
     </div>
 
     <div class="article article__comments">
-        <h3 class="article article__comments-head">Comments</h3>
+        <h3 class="article article__comments-head">Comments <%= @article.comments.count %></h3>
         <% if @article.comments.any? %> 
             <%= render 'comments/comment' %>
         <% end %>
@@ -16,13 +20,15 @@
 </article>
 
 <div class="comment">
-    <h4 class="comment comment__hint">Add a comment:</h4>
+    <h2 class="comment comment__hint">Any Suggestions?</h2>
     <div class="comment comment__form">
         <%= render 'comments/form' %>
     </div>
 </div>
 
 <div class="links">
+    <% if current_user %>
     <%= link_to 'Edit', edit_article_path(@article) %> |
+    <% end %>
     <%= link_to 'Back', articles_path %>
 </div>

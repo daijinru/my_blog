@@ -16,12 +16,13 @@
         <p class="alert"><%= alert %></p>
         <div class="page__frame">
             <div class="site__head">
-                <h1>Web Cat</h1>
+                <h1>Web Cat Site</h1>
                 <div class="site__head-link">
                     <% if current_user %>
                     <span><%= link_to 'New article', new_article_path %></span>
                     <% end %>
-                    <span><%= link_to 'Home Page', welcome_index_path %></span>
+                    <span><%= link_to 'Back', articles_path %></span>
+                    <span><%= link_to 'Home', welcome_index_path %></span>
                 </div>
             </div>
             <div class="page__content">

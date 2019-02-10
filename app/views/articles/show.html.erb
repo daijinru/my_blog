@@ -3,9 +3,9 @@
         <%= @article.title %>
     </h1>
 
-    <time class="article article_time">
+    <div class="article article_time">
         <%= @article.created_at.to_formatted_s(:long) %>
-    </time>
+    </div>
 
     <div class="article article__main markdown-body">
         <%= markdown @article.text %>

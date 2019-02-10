@@ -2,7 +2,6 @@
     &.article__title{
         font-size: 18px;
         margin-top: 10px;
-        margin-bottom: 5px;
     }
     
     &.article__main{
@@ -24,7 +23,7 @@
         font-weight: bold;
         line-height: 15px;
         color: #393;
-        border-bottom: 1px dotted #999;
+        border-bottom: 1px dashed #999;
     }
 
     &.article__comments-item{
@@ -46,6 +45,7 @@
 
     &.article_time{
         color: #393;
+        font-size: 12px;
         display: inline-block;
         margin-bottom: 5px;
     }
@@ -84,7 +84,7 @@
         font-weight: bold;
         line-height: 15px;
         color: #393;
-        border-bottom: 1px dotted #999;
+        border-bottom: 1px dashed #999;
     }
 
     .comment__form{

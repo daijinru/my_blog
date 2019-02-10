@@ -4,7 +4,6 @@
 
 .articles{
     width: 100%;
-    margin-bottom: 20px;
 
     &.article__thead th{
         text-align: left;
@@ -16,5 +15,13 @@
     
     &.article__thead th:nth-of-type(2){
         width: 40%;
+    }
+
+    &.article__tbody td{
+        font-size: 14px;
+    }
+
+    &.article__tbody td a{
+        color: #393;
     }
 }

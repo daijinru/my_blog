@@ -33,7 +33,7 @@
 .site__head{
     padding: 20px 20px 15px;
     text-align: center;
-    border-bottom: 1px dotted #ccc;
+    border-bottom: 1px dashed #ccc;
 }
 
 .site__head h1{

@@ -1,6 +1,6 @@
 <% @article.comments.each do |comment| %>
     <div class="article article__comments-item">
-        <p class="article article__comments-author"><%= comment.commenter %>:</p>
+        <p class="article article__comments-author"><%= comment.created_at.to_formatted_s(:short) %> | <%= comment.commenter %> said:</p>
         <p class="article article__comments-body"><%= comment.body %></p>
     </div>
     <div>

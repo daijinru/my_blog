@@ -14,7 +14,20 @@
     <div class="page__wrap">
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
-        <%= yield %>
+        <div class="page__frame">
+            <div class="site__head">
+                <h1>Web Cat</h1>
+                <div class="site__head-link">
+                    <% if current_user %>
+                    <span><%= link_to 'New article', new_article_path %></span>
+                    <% end %>
+                    <span><%= link_to 'Home Page', welcome_index_path %></span>
+                </div>
+            </div>
+            <div class="page__content">
+                <%= yield %>
+            </div>
+        </div>
     </div>
   </body>
 </html>

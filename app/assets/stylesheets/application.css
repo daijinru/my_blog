@@ -16,10 +16,33 @@
 
 .page__wrap{
     width: 90vw;
-    max-width: 800px;
+    max-width: 766px;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 80px;
+}
+
+.page__frame{
+    border: 1px solid #ccc;
+}
+
+.page__content{
+    padding: 20px;
+}
+
+.site__head{
+    padding: 20px 20px 15px;
+    text-align: center;
+    border-bottom: 1px dotted #ccc;
+}
+
+.site__head h1{
+    color: #000;
+    font-size: 28px;
+}
+
+.site__head-link{
+    text-align: right;
 }
 
 table{

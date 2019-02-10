@@ -1,8 +1,8 @@
 .article{
     &.article__title{
-        font-size: 24px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
     
     &.article__main{
@@ -12,30 +12,42 @@
 
     &.article__comments{
         margin-top: 20px;
-        background-color: #F3F5F9;
-        padding: 14px;
+        background-color: #f5f5f5;
+        border: 1px solid #dedede;
+        padding: 15px;
+    }
+
+    &.article__comments-head{
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 15px;
+        color: #393;
+        border-bottom: 1px dotted #999;
     }
 
     &.article__comments-item{
         margin-top: 10px;
         margin-bottom: 10px;
-        padding-left: 10px;
     }
 
     &.article__comments-author{
-        font-size: 16px;
-        margin-bottom: 4px;
+        color: #393;
+        font-size: 12px;
+        margin: 10px 0 5px;
     }
 
     &.article__comments-body{
-        font-size: 14px;
-        color: #666;
+        color: #333;
+        font-size: 13px;
+        padding-bottom: 15px;
     }
 
     &.article_time{
-        color: #666;
+        color: #393;
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     &.article__main{
